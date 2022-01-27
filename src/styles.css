@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap");
+
+body {
+  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%) fixed;
+}
+
+footer {
+  font-size: 13px;
+  margin: 15px;
+  text-align: center;
+}
+sup {
+  font-weight: 300;
+}
+
+p {
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  list-style-type: none;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+ul {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.card {
+  margin: 0 auto;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.conteudo {
+  border-radius: 20px;
+  background: white;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-size: 17px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-img-top {
+  width: 50%;
+}
+
+.minim {
+  font-size: 12px;
+}
+.maxim {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.now-data {
+  text-align: center;
+  line-height: 2;
+  margin: 20px;
+  background-image: url("../images/background-sun.png");
+  background-repeat: no-repeat;
+}
+.now {
+  text-align: left;
+  margin: 20px 30px 0 auto;
+  width: 40%;
+  margin-bottom: 50px;
+}
+
+.other-data {
+  font-size: 12px;
+  text-align: right;
+  margin: 0 20px 0 auto;
+}
+
+.temp-now {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.city-bar {
+  width: 90%;
+}
+
+.nameBuilt {
+  text-decoration: none;
+  color: #7d51e8;
+}
+.nameBuilt:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.temperature {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1;
+}
+.units {
+  position: relative;
+  top: -32px;
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SheCodes</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="conteudo m-2 p-3">
+        <!--...............form.................-->
+
+        <form id="search-city">
+          <div class="row">
+            <div class="col">
+              <input
+                type="search"
+                placeholder="Type a City"
+                class="form-control"
+                id="city-name-search"
+              />
+            </div>
+
+            <div class="col">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-primary"
+              />
+            </div>
+            <div class="col">
+              <button
+                class="btn btn-sucess btn-primary w-100"
+                id="current-location-button"
+                onClick="window.location.reload();"
+              >
+                Current
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <div class="now-data">
+          <div class="now">
+            <h1 class="city-name"></h1>
+
+            <p>
+              <span class="temperature" id="temperature"></span>
+              <span class="units">
+                <a href="#" id="celsius-link">ºC</a>|
+                <a href="#" id="fahrenheit-link">ºF</a>
+              </span>
+            </p>
+
+            <ul>
+              <li class="date-now"></li>
+              <li class="date-now-full"></li>
+            </ul>
+          </div>
+
+          <div class="other-data">
+            <ul>
+              <li class="wind">Wind: 24km/h</li>
+              <li class="humidity">Humidity: 50%</li>
+            </ul>
+          </div>
+        </div>
+        <!--...............temp futuras.................-->
+        <div class="row align-items-center">
+          <div class="col">
+            <div class="card" style="width: 8rem">
+              <div class="card-body">
+                <h5 class="card-title">Thursday</h5>
+                <img src="images/sol.png" class="card-img-top" alt="..." />
+                <p class="card-text">
+                  <span class="maxim tempMaxDay0"> 13ºC</span> <br />
+                  <span class="minim tempMinDay0"> 2ºC</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" style="width: 8rem">
+              <div class="card-body">
+                <h5 class="card-title">Friday</h5>
+                <img
+                  src="images/sol-nuvem.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <p class="card-text">
+                  <span class="maxim"> 11ºC</span> <br />
+                  <span class="minim"> 2ºC</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" style="width: 8rem">
+              <div class="card-body">
+                <h5 class="card-title">Saturday</h5>
+                <img
+                  src="images/sol-nuvem.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <p class="card-text">
+                  <span class="maxim"> 12ºC</span> <br />
+                  <span class="minim"> 5ºC</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" style="width: 8rem">
+              <div class="card-body">
+                <h5 class="card-title">Sunday</h5>
+                <img
+                  src="images/sol-nuvem.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <p class="card-text">
+                  <span class="maxim"> 12ºC</span> <br />
+                  <span class="minim"> 5ºC</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" style="width: 8rem">
+              <div class="card-body">
+                <h5 class="card-title">Monday</h5>
+                <img
+                  src="images/sol-nuvem.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <p class="card-text">
+                  <span class="maxim"> 13ºC</span> <br />
+                  <span class="minim"> 4ºC</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--...............footer.................-->
+      <footer>
+        <strong>
+          Produces by
+          <a
+            href="https://github.com/catiabarroco"
+            target="_black"
+            class="nameBuilt"
+            >Cátia Barroco (Catis Coding)</a
+          >
+        </strong>
+      </footer>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
